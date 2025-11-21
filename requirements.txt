@@ -1,0 +1,44 @@
+# Azure SDK Core Libraries
+azure-identity>=1.15.0
+azure-core>=1.29.0
+
+# Azure Data Factory
+azure-mgmt-datafactory>=3.0.0
+
+# Azure Databricks
+databricks-sdk>=0.18.0
+
+# Azure Synapse Analytics
+azure-synapse-spark>=0.7.0
+azure-synapse-artifacts>=0.17.0
+azure-mgmt-synapse>=2.0.0
+
+# Azure Storage
+azure-storage-blob>=12.19.0
+azure-storage-file-datalake>=12.14.0
+
+# Azure SQL Database
+pyodbc>=5.0.0
+sqlalchemy>=2.0.0
+
+# Azure Event Hub
+azure-eventhub>=5.11.0
+
+# Azure Stream Analytics
+azure-mgmt-streamanalytics>=1.0.0
+
+# PowerBI API
+msal>=1.26.0
+requests>=2.31.0
+
+# Configuration and Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# Logging and Monitoring
+structlog>=24.1.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0

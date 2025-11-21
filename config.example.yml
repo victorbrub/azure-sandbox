@@ -1,0 +1,64 @@
+# Example configuration file for Azure Sandbox
+# Copy this to config.yml and fill in your values
+
+azure:
+  subscription_id: "your-subscription-id"
+  tenant_id: "your-tenant-id"
+  client_id: "your-client-id"  # Optional, for service principal auth
+  client_secret: "your-client-secret"  # Optional, for service principal auth
+  
+  # Azure Data Factory
+  data_factory:
+    resource_group: "your-resource-group"
+    factory_name: "your-adf-name"
+  
+  # Azure Databricks
+  databricks:
+    workspace_url: "https://adb-xxxxxxxxx.azuredatabricks.net"
+    token: "your-databricks-token"  # Optional, can use Azure AD
+  
+  # Azure Synapse
+  synapse:
+    resource_group: "your-resource-group"
+    workspace_name: "your-synapse-workspace"
+    endpoint: "https://your-workspace.dev.azuresynapse.net"
+  
+  # Azure Storage
+  storage:
+    account_name: "your-storage-account"
+    # Connection string is optional if using Azure AD auth
+    connection_string: "DefaultEndpointsProtocol=https;AccountName=..."
+  
+  # Azure SQL Database
+  sql:
+    server: "your-server.database.windows.net"
+    database: "your-database"
+    username: "your-username"  # Optional if using Azure AD
+    password: "your-password"  # Optional if using Azure AD
+  
+  # Azure Event Hub
+  eventhub:
+    namespace: "your-namespace.servicebus.windows.net"
+    eventhub_name: "your-eventhub"
+    connection_string: "Endpoint=sb://..."  # Optional if using Azure AD
+  
+  # Azure Stream Analytics
+  stream_analytics:
+    resource_group: "your-resource-group"
+    location: "eastus"
+
+# PowerBI API
+powerbi:
+  client_id: "your-powerbi-app-id"
+  client_secret: "your-powerbi-app-secret"  # For service principal
+  tenant_id: "your-tenant-id"
+  username: "your-username"  # For user auth
+  password: "your-password"  # For user auth
+  workspace_id: "your-workspace-id"  # Optional default workspace
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "logs/azure-sandbox.log"
+  structured: true
+  json_logs: false
